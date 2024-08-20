@@ -1,0 +1,246 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+    
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h4{
+    color: honeydew;
+    padding-top: 5vh;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000; 
+   
+}
+
+/* card start */
+.glow-on-hover {
+    margin-top: 1vh;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+/* From Uiverse.io by Tiagoadag */ 
+.card {
+ width: 85vw;
+ height: 80vh;
+ background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+ border-radius: 20px;
+ -webkit-transition: all .3s;
+ transition: all .3s;
+}
+
+.card2 {
+ width: 85vw;
+ height: 80vh;
+ background-color: #1a1a1a;
+ 
+ -webkit-transition: all .2s;
+ transition: all .2s;
+ border-radius: 20px;
+}
+
+.card2:hover {
+ -webkit-transform: scale(0.98);
+     -ms-transform: scale(0.98);
+         transform: scale(0.98);
+ border-radius: 20px;
+}
+                
+.card:hover {
+ -webkit-box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+         box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+
+
+
+/* card end */
+}
+
+.header{
+    width: 85vw;
+    height: 10vh;
+ /*    background-color: green; */
+}
+
+
+
+
+.icon{
+    width: 85vw;
+    height: 50vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.score{
+    width: 85vw;
+    height: 20vh;
+    /* background-color: yellow; */
+}
+
+
+/* for setting image */
+
+.icon div{
+    width: 40vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    background-size: cover;
+    
+}
+
+#rock{
+    background-image: url('rock.png');
+    
+}
+
+#paper{
+    background-image: url('paper.png');
+    
+}
+
+#scissors{
+    background-image: url('scissors.png');
+    
+    
+    background-size: cover;
+}
+
+
+/* button design  */
+
+.icon div:hover{
+
+    opacity: 50%;
+    border: whitesmoke 5px black;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+
+/* scoreboard */
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.score h4{
+    color: whitesmoke;
+}
+
+#you,#computer,#draw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.about{
+    margin-top:0px;
+    font-weight: bolder;
+    font-family: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 6vw;
+}
+
+.about a i{
+    margin-top:-10px;
+    font-size: 10vw;
+    
+}
+
+
+
+
+
+
+
+
